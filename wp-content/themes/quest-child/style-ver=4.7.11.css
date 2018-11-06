@@ -1,0 +1,417 @@
+/**
+ * Theme Name:  CERES: Exhibit Toolkit (Quest Child Theme)
+ * Theme URI:   http://pacethemes.com/wordpress-themes/quest/
+ * Template:    quest
+ * Author:      Pace Themes
+ * Author URI:  http://pacethemes.com
+ * Description: Your Quest for an awesome WordPress theme ends right here. Quest let's you create the website you need without having any coding knowledge. Quest offers a powerful click, drag and drop page builder to help you create amazing pages to showcase your content while offering a slick user interface therein increasing your user experience. Quest also includes powerful and flexible easy to understand and easy to use customization options to customize the entire layout of your site including background images, colors, typography and so on. Build your site now using Quest - blog, portfolio, eCommerce, magazine, photography and so on, Quest doesn't limit you when it comes to your creativity. Quest is built on the famous bootstrap framework which uses a mobile first approach, this will ensure your site works properly on all mobiles, tablets, laptops and desktops. Theme demo is available at http://quest.demo.pacethemes.com/
+ * Version:     1.2.2
+ * License:     GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: quest-child
+ * Domain Path: /languages/
+ * Tags:        black, blue, green, gray, orange, red, white, yellow, dark, light, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, fixed-layout, fluid-layout, responsive-layout, buddypress, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready, photoblogging
+ *
+ * Quest, like WordPress, is licensed under the GPL.
+ * Quest is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+ */
+
+ /*for northeastern-logo in footer and header*/
+.northeastern-logo{
+  text-shadow: none;
+  color: transparent;
+  width: 100%;
+  height: 30px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  max-width: 215px;
+  display: block;
+  background-size: contain;
+  background-position:top left;
+  background-repeat:no-repeat;
+  opacity: .8;
+  position: relative;
+  top: 15px;
+}
+.nu-header {
+  border-bottom:none;
+}
+.nu-header .northeastern-logo {
+  height: 50px;
+  max-width: 275px;
+}
+.copyright-text address{
+  padding-left:15px;
+}
+.custom-footer p{
+  padding:20px;
+  margin:0px;
+  font-size: 13px;
+}
+
+/*for nu social media icons in footer */
+.nu-social{
+  margin: 0 0 0.75em 0;
+}
+.nu-social > li{
+  float: right;
+  display: block;
+}
+.nu-social > li > a{
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  padding: 0.25em;
+  font-size: 1.3em;
+  opacity: 0.5;
+}
+.nu-social > li > a:hover, .nu-social > li > a:focus {
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+  text-decoration: none;
+  opacity: 1;
+}
+@media(max-width:767px) {
+  .nu-social{
+    float:left;
+  }
+}
+#menu-item-search form{
+  padding:15px;
+}
+
+/*for drstk search/browse*/
+.browse .drs-item-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.browse .drs-item-title a, .browse .drs-item-creator, .browse .drs-item-abstract, .browse .drs-item-date{
+  height:1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.drs-facet-name{
+  display:block;
+}
+.btn-more{
+  text-transform:capitalize;
+  background-color: transparent;
+  color: #c00;
+  border: 1px solid #ddd;
+  margin: 10px 0px 10px 0px;
+  width:100%;
+  white-space:normal;
+}
+#drs-selection .btn-more{
+  width:auto;
+}
+.drs-facet-val {
+  display:block;
+  overflow:auto;
+  border-bottom:1px dotted #eee;
+  padding: 5px 0px 5px 0px;
+}
+#content select#drs-per-page, #content select#drs-sort-option{
+  width:auto;
+  margin:0;
+}
+@media (min-width:767px){
+  #drs-browse-header-row, #drs-selection{
+    padding-bottom:15px;
+  }
+}
+@media (max-width: 767px) {
+  #drs-content .col-md-2 {
+      margin-bottom: 30px;
+  }
+}
+.drs-facet-toggle{
+  margin-bottom:10px;
+}
+#secondary .container{
+  width:auto;
+}
+#secondary h1{
+  font-size:1.5em;
+}
+.ellipsis + .ellipsis{
+  display: none;
+}
+
+
+
+/*updates for modal height*/
+.modal-body{
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+@media (min-height: 500px) {
+    .modal-body { max-height: 400px; }
+}
+
+@media (min-height: 800px) {
+    .modal-body { max-height: 600px; }
+}
+
+#drs_item_modal .modal-body{
+  max-height:100%;
+}
+
+/*fixes for pagination*/
+.pagination{
+  margin-top:10px;
+}
+#drs_item_modal .pagination{
+  margin:0;
+}
+
+/*for tiled galleries*/
+.free-wall {
+  margin: 15px;
+}
+.brick {
+  width: 221.2px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  border-radius: 3px;
+  border: none;
+}
+.info, .drs-item.hover .drstk-caption[data-caption-position="hover"] {
+  padding: 15px;
+  text-align:left;
+  font-style: normal;
+  line-height: 150%;
+}
+.drs-item.hover .drstk-caption[data-caption-position="hover"]{
+  position:absolute;
+  width:inherit;
+}
+.drs-item.hover .drstk-caption[data-caption-position="hover"] a{
+  height:100%;
+  width:100%;
+}
+.drs-item.hover{
+  display:inline-block;
+  position:relative;
+}
+.panel-grid-cell .drs-item.hover{
+  display:block;
+  width:100%;
+}
+.panel-grid-cell .drs-item.hover img{
+  width:100%;
+}
+.drs-item.hover a{
+  display:inline-block;
+  width:100%;
+}
+.brick img {
+  margin: 0px;
+  padding: 0px;
+  display: block;
+  width: 100%;
+	max-width: 100%;
+  /*width: auto;
+max-width: 100%;
+position: relative;
+height: 100%;
+margin-left: auto;
+margin-right: auto;*/
+}
+.cell{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+.cell .info, .brick-hover .info, .drs-item.hover .drstk-caption[data-caption-position="hover"]{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
+  -webkit-transition: visibility 0.2s linear, opacity 0.2s linear;
+  -moz-transition: visibility 0.2s linear, opacity 0.2s linear;
+  -o-transition: visibility 0.2s linear, opacity 0.2s linear;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding:0;
+}
+.brick-hover .info, .drs-item.hover .drstk-caption[data-caption-position="hover"]{
+  top:0;
+  background:#FFF;
+  overflow:scroll;
+}
+.cell:hover .info, .brick-hover:hover .info, .drs-item.hover:hover .drstk-caption[data-caption-position="hover"]{
+  visibility: visible;
+  opacity: .9;
+  transition-delay: 0;
+}
+.cell .info > div{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+.cell .info a, .brick-hover .info a, .drs-item.hover .drstk-caption[data-caption-position="hover"]{
+  display: block;
+  padding: 15px;
+  height: 100%;
+}
+
+/*for bootstrap carousel*/
+.carousel-caption{
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding:25px;
+  margin-left:auto;
+  margin-right:auto;
+}
+.carousel-inner > .item > a > img {
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+.carousel-control.right, .carousel-control.left{
+  background-image:none;
+  opacity:1;
+}
+ol.carousel-indicators, .entry-content ol.carousel-indicators {
+  margin-bottom:-20px;
+}
+
+/*for single drs item*/
+.drs-item a:not(.button){
+  display:block;
+}
+.drstk-caption{
+  display:inline-block;
+}
+.drs-item .fa-folder-open-o{
+  font-size:80px;
+  padding:45px;
+}
+figure, figcaption{
+  text-align:center;
+}
+figcaption .label{
+  border:1px solid #ddd;
+}
+.drs-item figure a{
+  text-decoration: none;
+}
+.home #content .entry-title:first-of-type {
+display: none;
+}
+.home #content .related_content .entry-title, .home #content #secondary .entry-title  {
+  display:block;
+  margin-top:0;
+}
+.drs-item-details b, .drs-field-label, .drs-field-label b{
+  font-weight:bold;
+}
+.drs-field-label:after{
+  content:':';
+}
+.drs-field-value{
+  padding-left:5px;
+  font-weight:normal;
+  word-break: break-word;
+}
+.drs-item-custom{
+  padding-top: 30px;
+}
+
+/*fixes for ugly dropdown menus*/
+.main-navigation .nav > li > a{
+  line-height:48px !important;
+  padding-top:6px;
+}
+.main-navigation .nav .dropdown-menu .dropdown-menu {
+  margin-top: -1px !important;
+}
+
+.panel-body{
+  font-size:90%;
+}
+
+/*fis for no flash images on certain versions of ios*/
+.issuuembed .read-link img{left:0 !important;}
+
+#single_carousel .carousel-caption{
+  padding:10px;
+  display:none;
+}
+#single_carousel:hover .carousel-caption{
+  display:block;
+}
+
+/* for associated files display */
+.assoc_files, .related_content{
+  margin-top:30px;
+}
+.assoc_files .panel-body, .related_content .panel-body{
+  font-size:90%;
+}
+.assoc_files img, .related_content img{
+  float:right;
+  padding-left:5px;
+  padding-bottom:5px;
+}
+
+/*hide issue embed links*/
+.issuu-isrendered span{
+  display:none !important;
+}
+
+/*allows item caption hover*/
+.panel-grid-cell .textwidget{
+  width:inherit;
+  position:relative;
+}
+
+/*for wp search content exceeding box*/
+.entry-content p{
+  word-wrap:break-word;
+}
+
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+/*for mirador*/
+#mirador_viewer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  min-height: 650px;
+}

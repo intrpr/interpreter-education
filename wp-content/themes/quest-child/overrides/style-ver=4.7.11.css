@@ -1,0 +1,65 @@
+.secondary-header {
+  height: 6px;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+}
+
+.custom-footer h4,
+.copyright-text h3 {
+  color: rgb(212, 215, 217);
+}
+
+.custom-footer {
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+.copyright-text h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.copyright-text ul.nav {
+  margin: 15px 0px;
+  text-transform: uppercase;
+}
+
+.copyright-text p {
+  line-height: 1.42857143;
+  margin: 15px 0;
+}
+
+.copyright ul {
+    float: none;
+}
+
+.niec-img-overlay {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%}
+.niec-img-overlay img {
+    opacity: .65;
+    filter: alpha(opacity=65);
+}
+
+.niec-img-caption {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    opacity: .75;
+    filter: alpha(opacity=75);
+}
+.niec-img-caption h4 {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 15px 0;
+    margin: 0;
+}
